@@ -1,5 +1,7 @@
+* {box-sizing: border-box}
 body{
 	background-color: #f9fff9;
+    font-family: Verdana, sans-serif; margin:0
 }
 ul {    
 	    list-style: none ; 
@@ -7,41 +9,47 @@ ul {
 	    border-radius: 1px ; 
 	    list-style: 
 	}
+.flex{
+	display: flex;
+}
+.wap{
+	display: flex;
+    flex-wrap: wrap; 
+}
+.vertical {
+     border-right: 1px solid lightgrey;
+ }
+
 
 .tophoto{
         width: 100%;
         height:100%;
     }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-/*header code*/
-/* Style the header */
 .header {
         padding: 20px 32px;
         background: #555;
         color: #f1f1f1;
         font-family: cursive;
         background-blend-mode: darken;
-
-
+        border-radius: 7.5px;
+        margin: 0px;
     }
-
-/* Page content */
-.content {
-        padding: 16px;
+.mainheader {
+        width: 100%;
+        height: 50px;
+        background: #555;
+        color: #f1f1f1;
+        font-family: cursive;
+        background-blend-mode: darken;
+        border-radius: 7.5px;
     }
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-        position: fixed;
-        top: 0;
-        width: 100%
-    }
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
-}
-
 .center{
 	float: center;
 	text-align: center;
@@ -70,4 +78,44 @@ ul {
 }
 #green-house-photo{
 		width: 100% ; height: 100% ;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: darkgrey;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

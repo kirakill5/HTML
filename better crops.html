@@ -1,0 +1,239 @@
+<!--i hate my life and i hate programing (my feeling while working on this project) so be nice to me pls :')-->
+<!DOCTYPE html>
+<html style="background-color:#f9fff9;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="https://emojis.wiki/emoji-pics/messenger/seedling-messenger.png">
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+
+/* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+/* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+/* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+/* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+/* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;      
+        position: absolute;
+        top: 0;
+      }
+
+/* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+/* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+/* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="mainheader" id="myHeader" >
+          <div  class="center">
+                <h2 class="center" style="font-size: 2em">Better Crops</h2>
+          </div>
+      <div>
+        <h2 class="center"  id="beta">BETA</h2>
+      </div>  
+    </div>
+
+
+
+
+    <div style="width: 100%; height: 30%" class="flex">
+      <div style="width: 50%; height: 100%" class="center">
+        <img src="https://emojis.wiki/emoji-pics/messenger/seedling-messenger.png">
+        <br>
+        <h4>Hey you!</h4>
+        <h5>yes you...</h5>
+        <strong>do you want to get a better result from your crops?</strong><br>
+        <h5>you are in the right place</h5>
+      </div>
+      <div style="width: 50%; height: 100%" class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Data-Analysis-Careers-NDMU-Online.png" style="width:100%">
+          <div class="text">more analyse</div>
+        </div>
+ 
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="R43e4aeb93bf80a0b861ee4a34d2e293c.png" style="width:100%">
+          <div class="text">internet related</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="depositphotos_182388892-stock-illustration-growth-of-plant-from-sprout.jpg" style="width:100%">
+          <div class="text" style="color: black">Better Results</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </div>
+
+
+    <div class="flex" style="width: 100%; height: 50%;">
+      <div style=" width:50%; height: 100%;" class=" vertical">
+        <div style="width: 100%; height: 25%" class="center"><h2>Introduction</h2></div>
+        <div style="width: 100%; height: 75%" class="center">
+          a lot of farmers are stracling<br>
+          stracling with the low prodetion of there farmers<br>
+          we have the solution to there <strong>to you</strong><br><br>
+          and thats why we are here<br>
+          <br>
+        </div>
+      </div>
+      <div style=" width:50%; height: 100%;" class=" vertical">
+        <div style="width: 100%; height: 25%" class="center"><h2>About us</h2></div>
+        <div style="width: 100%; height: 50%" class="center">
+          we are a small team of three persons<br>
+          an full amateur team trying <strong style="color: darkred">IOT</strong> for the first time<br>
+          well we wish a good beta test for you<br>
+          for more info pess this button<br>
+        </div>
+        <div style="width: 100%; height: 50%" class="center"><button class="button" style="vertical-align:middle"><a href="more about us.html"><span>more about us</span></a></button></div>
+      </div>
+    </div>
+    <hr>
+    <div class="center" style="width: 100%; height: 50%">
+      <div style="width: 100%; height: 100%">
+        <div style="width: 100%; height:33.333%;" class="flex"> 
+          <div><img src="Ref8e54342262d7f87cf44c8288ac5982.png" alt="graph emoji"></div>
+          <div> 
+            <div class="center" style="height: 50%"><h3>get a better look about our work for this button</h3></div>
+            <div class="center">
+              <button class="button" style="vertical-align:middle; color: white;" >
+                <a href="project final.html">
+                  <span>Statistic page</span>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr style="color: darkgrey;">
+        <div style="width: 100%; height:33.333%;">  </div>
+        <hr style="color: darkgrey;">
+        <div style="width: 100%; height:33.333%;">  </div>
+        <hr style="color: darkgrey;">
+      </div>
+    </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</body>
+</html> 
