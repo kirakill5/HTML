@@ -1,0 +1,83 @@
+
+<script type="text/javascript">
+
+//I DATA TYPES:
+/*undefined().null(nothig).boolean
+string(word).symbol(idk).number.object(idk)
+*/
+
+
+//II DICLAR:
+var myName = "Beau";/*for all the script*/
+myName = 8;
+let ourName = "freeCodeCamp";
+const pi = 3.14;/*you can not change*/
+
+
+//III CONSOLE.LOG:
+var a;
+a = 2;
+console.log(a)//print a (2)
+
+
+//IV basic math
+var sum = 10 + 10; //20 
+var difference = 100 - 10; //90
+var product = 2 * 3; //6
+var quotient = 10 / 2;//5
+/*Incrementin*/ var myVar = 8;/*9*/ myVar = myVar +1 /*or*/ myVar++
+/*Decrementing*/ myVar = myVar - 1; /*or*/  myVar--;
+var remainder = 11 % 3;/*mod*/
+a = a + 12; /*or*/ a += 12;
+a = a - 12; /*or*/ a -= 12;
+a = a * 12; /*or*/ a *= 12;
+a = a / 12; /*or*/ a /= 12;
+
+
+//V str:
+var name = "adam";
+var firstLetter = name[0] /*firstLetter=a (js is a 0 index L)*/ 
+caracterNumber = name.legth;/*=4*/
+var lastLetter = name[name.legth-1];/*=m*/
+
+
+//VI ARRAYS:
+//1 Simpel Arrays:
+var myArray = ["John" , 23 , 1.80];
+
+//2 Nested Arrays (multi D):
+var multiArray = [ ["mohamed",22],["ali",32] ]
+
+//3 in the Arrays:
+myArray = ["John" , 23 , 1.80];
+var myData = myArray[0] /*="John"*/
+
+//4 modify Array:
+myArray = ["John" , 23 , 1.80];
+myArray[0] = "Mark";  /*myArray = ["Mark" , 23 , 1.80];*/
+
+//4 in and modify multi D Array:
+multiArray = [ ["mohamed",22],["ali",32] ]
+var myMultiData = [0][1];/*2*/
+var myIterArray = [1];/*["ali",32]*/
+
+//5 push() something into an Array (the last caracter):
+myArray = ["John" , 23 , 1.80];
+myArray.push(["male","gamer"]);
+/*myArray = ["John" , 23 , 1.80,["male","gamer"]];*/
+
+//6 pop() f to remove the last caracter from an Array:
+var anArray = [10,20,30,40,50]
+var removeFromArrayLast = anArray.pop()
+/*anArray = [10,20,30,40]*/
+
+//7 shift() f to remove the first caracter from an Array:
+anArray = [10,20,30,40]
+var removeFromArrayFirst = anArray.shift()
+/*anArray = [20,30,40]*/
+
+//8 unshift something into an Array (the first caracter):
+anArray = [10,20,30,40]
+anArray.unshift(0);
+/*anArray = [0,20,30,40]*/
+</script> 
